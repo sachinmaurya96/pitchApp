@@ -27,7 +27,7 @@ const StartUpCard = ({ post }: { post: StartupTypeCard }) => {
                 {author?.name}
             </p>
           </Link>
-          <Link href={`/startups/${_id}`}>
+          <Link href={`/startup/${_id}`}>
           <h3 className="text-26-semibold line-clamp-1">
             {title}
           </h3>
@@ -37,7 +37,7 @@ const StartUpCard = ({ post }: { post: StartupTypeCard }) => {
             <Image src={"https://avatars.githubusercontent.com/u/125910801?v=4"} alt="" width={48} height={48} className="rounded-full"/>
         </Link>
       </div>
-      <Link href={`/startups/${_id}`}>
+      <Link href={`/startup/${_id}`}>
         <p className="startup-card_desc">
             {description}
         </p>
@@ -49,7 +49,7 @@ const StartUpCard = ({ post }: { post: StartupTypeCard }) => {
                 {category}
                 </p></Link>
                 <Button asChild className="startup-card_btn">
-                    <Link href={`/startups/${_id}`} >
+                    <Link href={`/startup/${_id}`} >
                          Details
                     </Link>
                 </Button>
