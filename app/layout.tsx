@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "easymde/dist/easymde.min.css";
-
+import { Toaster } from "@/components/ui/sonner";
 const workSans = localFont({
   src: [
     { path: "./fonts/WorkSans-Thin.ttf", weight: "100", style: "normal" },
@@ -28,8 +28,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${workSans.variable} antialiased`}>
-        {children}
+      <body className={`${workSans.variable} antialiased light`}>
+       <main> {children}</main>
+        <Toaster richColors position="bottom-right"/>
       </body>
     </html>
   );
