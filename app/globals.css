@@ -286,7 +286,7 @@
 }
 
 @utility startup-card_skeleton {
-  @apply w-full h-96 rounded-[22px] bg-zinc-400;
+  @apply w-full h-96 rounded-[22px] bg-zinc-800;
 }
 
 /* Startup form */
@@ -324,7 +324,7 @@
 
 /* View */
 @utility view-container {
-  @apply flex justify-end items-center mt-5 fixed bottom-3 right-3;
+  @apply flex justify-end items-center mt-5 fixed bottom-[70px] right-3;
 }
 
 @utility view-text {
